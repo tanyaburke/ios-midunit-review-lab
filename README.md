@@ -9,6 +9,11 @@ Input: `Hello, there`
 
 Output: `HELLO, THERE`
 
+var hey = "Hello, there"
+let heyUppercase = hey.uppercased()
+print (heyUppercase)
+
+
 2. **Given a String, return a String alternating between uppercase and lowercase letters**
 
 
@@ -33,11 +38,19 @@ Input: `[1,5,2,4,1,4]`
 
 Output: `5`
 
+let numArray = [1,5,2,4,1,4]
+var largestElement =  (numArray.max() ?? 0)
+
+
 2. **Given an array of type [Int], return the smallest element**
 
 Input: `[1,5,2,4,1,4]`
 
 Output: `1`
+
+let numArray = [1,5,2,4,1,4]
+var smallestElemant = (numArray.min() ?? 0)
+
 
 3. **Given an array of type [Int], return its sum**
 

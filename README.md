@@ -21,6 +21,16 @@ Input: `Hello, there`
 
 Output: `HeLlO, tHeRe`
 
+var hey2 = Array(hey).enumerated()
+for (index, char) in hey2 {
+    if index % 2 == 0 {
+        print(char.uppercased(), terminator:"")
+    } else {
+        print(char, terminator:"")
+    }
+}
+
+print(hey.sorted(by: >))
 
 3. **Given a String, return a String with all occurrences of a given letter removed**
 
@@ -58,15 +68,27 @@ Input: `[1,5,2,4,1,4]`
 
 Output: `17`
 
+
+let sumArray = [1,5,2,4,1,4]
+var sum = sumArray.reduce(0,+)
+print(sum)
+
+
 4. **Given an array of type [Double], return its average**
 
 Input: `[3,4.5,7.5,2,1]`
 
 Output: `3.6`
 
+var inputAverage = [3,4.5,7.5,2,1]
+var sumInputAverage = inputAverage.reduce(0, +)
+var averageInputArray = sumInputAverage / Double(inputAverage.count)
+print(averageInputArray)
+
+
 5. **Given an array of type [Double] and a Double, return the sum of all numbers in the array greater than a given number**
 
-Input: `[3,4.5,7.5,2,1], 3`
+Input: `[3,4.5,7.5,2,1] 3`
 
 Output: `12`
 
